@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript">
+       
+        function change() {
+            document.getElementById("reference").style.display="flex";
+            let v = document.getElementById("hamdropdown").style.display;
+           
+            console.log(v);
+            document.getElementById("hamdropdown").style.display = (v == "block" || v == "flex") ? "none" : "flex";
+            l = ['admissions', 'institute', 'academics', 'administration', 'campus', 'department', 'research', 'careers', 'placement', 'resources']
+            for (x of l) { document.getElementById(x).style.display = "none"; }
+        }
+
+        function get(inp, url) {
+            l = ['admissions', 'institute', 'academics', 'administration', 'campus', 'department', 'research', 'careers', 'placement', 'resources']
+            if (document.getElementById(inp).style.display == "flex") {
+                window.location.href = url;
+            }
+            else {
+                for (x of l) { document.getElementById(x).style.display = "none"; }
+                document.getElementById(inp).style.display = "flex";
+
+
+            }
+
+        }
+
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="headerroorkee.css">
+</head>
+
+<body>
+    <header>
+        <div class="bigheader">
+            <div class="utmost">
+                <div class="logo">
+                    <img class="iitr" src="header_assets/iitr logo 4.svg">
+
+                </div>
+                <div class="top">
+                    <img class="g20" src="header_assets/g20-logo.png">
+                    <div class="options">
+                        <div class="options1">
+                            <div class="lang">
+                                <a href="https://iitr.ac.in/Hindi">हिंदी</a>
+                                <p> | </p><a href="https://iitr.ac.in/">ENG</a>
+                            </div>
+                            <div class="size">
+                                <a>A-</a>
+                                <a>A</a>
+                                <a>A+</a>
+                            </div>
+                            <div class="mode">
+                                <button>A</button>
+                                <button>A</button>
+                            </div>
+                        </div>
+                        <hr class="dividham">
+                        <div class="bottomtop">
+                            <a href="https://newwebmail.iitr.ac.in/">WEBMAIL</a>
+                            <a href="https://iitr.ac.in/Institute/Contact%20Us.html">CONTACT US</a>
+                            <a href="https://iitr.ac.in/support/td/">DIRECTORY</a>
+                        </div>
+                    </div>
+                    <img class="mg" src="header_assets/mag.svg">
+                </div>
+            </div>
+            <hr class="dividor">
+            <div class="dropdown">
+                <div class="BASE">
+                    <div class="PARENT">
+                        <a href="https://iitr.ac.in/Institute/index.html">INSTITUTE</a>
+                        <img src="header_assets/Drop.png">
+                    </div>
+                    <div class="DD">
+                        <div class="special">
+                            <a>About the Institute</a>
+                            <div id="About"><img src="header_assets/Drop.png" style="transform: rotate(-90deg);"></div>
+
+                            <div class="SubAbout">
+                                <a
+                                    href="https://iitr.ac.in/Institute/About%20the%20Institute/Institute%20Time%20Capsule.html">Institute
+                                    Time Capsule</a>
+                                <a href="https://iitr.ac.in/Institute/About%20the%20Institute/IITR%20by%20Numbers.html">IITR
+                                    By Numbers</a>
+                                <a
+                                    href="https://iitr.ac.in/Institute/About%20the%20Institute/Luminaries.html">Luminaries</a>
+                                <a href="https://iitr.ac.in/Institute/About%20the%20Institute/Governing%20Acts.html">Governing
+                                    Acts</a>
+                            </div>
+                        </div>
+                        <a href="https://iitr.ac.in/Institute/Newsroom.html">Newsroom</a>
+                    </div>
+                    <div class="DD"></div>
+                </div>
+                <div class="BASE">
+                    <div class="PARENT">
+                        <a href="https://iitr.ac.in/Academics/Admission.html">ADMISSIONS</a>
+                        <img src="header_assets/Drop.png">
+
+                    </div>
+                    <div class="DD">
+                        <a href="https://iitr.ac.in/Academics/Admission%20To%20Undergraduate%20Programmes.html">UG
+                            Admissions</a>
+                        <a href="https://iitr.ac.in/Academics/Admission%20To%20Postgraduate%20Programmes.html">PG
+                            Admissions</a>
+                        <a href="https://iitr.ac.in/Academics/Admission%20To%20Doctoral%20Programmes.html">PHD
+                            Admissions</a>
+                    </div>
+                </div>
+
+                <div class="BASE">
+                    <div class="PARENT">
+                        <a href="https://iitr.ac.in/Academics/Admission.html">ADMINISTRATION</a>
+                        <img src="header_assets/Drop.png">
+                    </div>
+                    <div class="DD">
+                        <a href="https://iitr.ac.in/Administration/Senate.html">Senate</a>
+                        <a href="https://iitr.ac.in/Administration/Student%20Affairs%20Council.html">Student Affair
+                            Council</a>
+                        <a href="https://iitr.ac.in/Administration/Deans%20Structure/index.html">Deans Corner</a>
+                        <a href="https://iitr.ac.in/Administration/Institute%20Central%20Administration.html">Institute
+                            Central Administration</a>
+                        <a href="https://iitr.ac.in/Administration/Organisations.html">Organisations</a>
+                    </div>
+                </div>
+
+
+
+                <div class="BASE">
+                    <div class="PARENT">
+                        <a href="https://iitr.ac.in/Academics/Home.html">ACADEMICS</a>
+                        <img src="header_assets/Drop.png">
+                    </div>
+                    <div class="DD">
+                        <a href="https://iitr.ac.in/Academics/Notifications.html">Notfications</a>
+                        <a href="https://iitr.ac.in/Academics/Academic%20Calendar.html">Academic Calender</a>
+                        <a href="https://iitr.ac.in/Academics/Institute%20Fees.html">Fee Structure</a>
+                        <a href="https://iitr.ac.in/Academics/Academic%20Programmes.html">Academic Programmes</a>
+                        <a href="https://iitr.ac.in/Academics/Downloads.html">Downloads</a>
+                        <a href="https://iitr.ac.in/Administration/DAPC.html">DAPC/CAPC/ScAPC and DRC/CRC/ScRC</a>
+                        <a href="https://acad.iitr.ac.in/">Academic Login</a>
+
+                    </div>
+                </div>
+                <div class="BASE">
+                    <div class="PARENT">
+                        <a href="https://iitr.ac.in/Departments/index.html">DEPARTMENTS</a>
+                        <img src="header_assets/Drop.png">
+                    </div>
+                    <div class="DD">
+                        <a href="https://iitr.ac.in/Departments/index.html">Departments</a>
+                        <a href="https://iitr.ac.in/Centres/index.html">Centres</a>
+                        <a href="https://www.iitr.ac.in/mfsdsai/">School</a>
+                    </div>
+                </div>
+
+                <div class="BASE">
+                    <div class="PARENT">
+                        <a href="https://www.iitr.ac.in/sric/">RESEARCH</a>
+                        <img src="header_assets/Drop.png">
+                    </div>
+                    <div lclass="DD"></div>
+                </div>
+                <div class="BASE">
+                    <div class="PARENT">
+                        <a href="https://iitr.ac.in/Campus%20Life/index.html">CAMPUS LIFE</a>
+                        <img src="header_assets/Drop.png">
+                    </div>
+                    <div class="DD">
+                        <a href="https://iitr.ac.in/Campus%20Life/Hostels.html">Hostel Life</a>
+                        <a href="https://iitr.ac.in/Campus%20Life/Student%20Groups/index.html">Student Groups</a>
+                        <a href="https://iitr.ac.in/Campus%20Life/Guest%20House/index.html">Guest House</a>
+                        <a href="https://iitr.ac.in/Campus%20Life/Clubs/index.html">Clubs</a>
+                        <a href="https://iitr.ac.in/Campus%20Life/Sports/index.html">Sports</a>
+                        <a href="https://iitr.ac.in/Campus%20Life/Facilities/index.html">Facilities</a>
+                        <a href="https://iitr.ac.in/Campus%20Life/Freshers%E2%80%99%20FAQ/Home.html">Fresher's FAQ</a>
+                    </div>
+                </div>
+                <div class="BASE">
+                    <div class="PARENT">
+                        <a href="https://iitr.ac.in/Careers/index.html">CAREERS</a>
+                        <img src="header_assets/Drop.png">
+                    </div>
+                    <div class="DD">
+                        <a href="https://spark.iitr.ac.in/">Intern@IITR(SPARK)</a>
+                        <a href="https://iitr.ac.in/Careers/Faculty%20Positions/index.html">Faculty Position</a>
+                        <a href="https://iitr.ac.in/Careers/Other%20job%20openings/index.html">Other Job Openings</a>
+                        <a href="https://iitr.ac.in/Careers/Recruitment%20Exam%20Archives/index.html">Recruitment
+                            Examination</a>
+                        <a href="https://iitr.ac.in/Careers/index.html">FAQS</a>
+                    </div>
+                </div>
+                <div class="BASE">
+                    <div class="PARENT">
+                        <a href="https://www.iitr.ac.in/Placements/pages/index.html">PLACEMENT</a>
+                        <img src="header_assets/Drop.png">
+                    </div>
+                    <div class="DD">
+                        <a href="https://www.iitr.ac.in/Placements/pages/index.html#plprocedure">Procedure</a>
+                    </div>
+                </div>
+                <div class="BASE">
+                    <div class="PARENT">
+                        <a href="https://iitr.ac.in/Resources/index.html">RESOURCES</a>
+                        <img src="header_assets/Drop.png">
+
+                    </div>
+                    <div class="DD">
+                        <a href="https://mgcl.iitr.ac.in/">Library</a>
+                        <a href="https://alumni.iitr.ac.in/home">For Alumni</a>
+                        <a href="https://iitr.ac.in/Resources/Healthcare/index.html">Healthcare</a>
+                        <a href="https://iitr.ac.in/Resources/Funds%20Transfer/index.html">Funds Transfer</a>
+                        <a href="https://iitr.ac.in/Resources/Internal%20Committees/index.html">Internal Committees</a>
+                        <a href="https://www.iitr.ac.in/support/">Service and Support</a>
+                        <a href="https://iitr.ac.in/Resources/Administrative/Index.html">Administrative</a>
+                        <a href="https://iitr.ac.in/Resources/Miscellaneous/index.html">Miscalleneous</a>
+                        <a href="https://iitr.ac.in/Resources/Initiatives%20and%20Foundations/index.html">Intiative and
+                            Foundation</a>
+                        <a href="https://scsp.iitr.ac.in/">Scholarships</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hamburger">
+            <div class="hamtop">
+                <div class="icons">
+                    <button id="but" onclick="change()"><img class="hamicon" src="header_assets/Ham.png"></button>
+                    <img class="iitrlogo" src="header_assets/iitr logo 4.svg">
+                    <img class="g20logo" src="header_assets/g20-logo.png">
+                </div>
+                
+                <hr class="dividham">
+                <div id="reference">
+
+                    <div id="hamdropdown">
+                        <div class="option">
+                            <button
+                                onclick="get('institute','https://iitr.ac.in/Institute/index.html')">INSTITUTE</button>
+
+                            <button
+                                onclick="get('admissions','https://iitr.ac.in/Academics/Admission.html')">ADMISSIONS</button>
+
+
+                            <button onclick="get('academics','https://iitr.ac.in/Academics/Home.html')"
+                                on>ACADEMICS</button>
+                            <button onclick="get('administration','')" on>ADMINISTRATION</button>
+                            <button onclick="get('campus','https://iitr.ac.in/Campus%20Life/index.html')">CAMPUS
+                                LIFE</button>
+                            <button
+                                onclick="get('department','https://iitr.ac.in/Departments/index.html')">DEPARTMENTS</button>
+                            <button onclick="get('research','https://www.iitr.ac.in/sric/')">RESEARCH</button>
+                            <button onclick="get('careers','https://iitr.ac.in/Careers/index.html')">CAREERS</button>
+                            <button
+                                onclick="get('placement','https://www.iitr.ac.in/Placements/pages/index.html')">PLACEMENT</button>
+                            <button
+                                onclick="get('resources','https://iitr.ac.in/Resources/index.html')">RESOURCES</button>
+                            <hr class="hamdiv1" id="div1">
+                            <div class="bottomlast">
+                                <div class="langham">
+                                    <a href="https://iitr.ac.in/Hindi">हिंदी | </a><a href="https://iitr.ac.in/">ENG</a>
+                                </div>
+                                <div class="sizeham">
+                                    <a>A-</a>
+                                    <a>A</a>
+                                    <a>A+</a>
+                                </div>
+                                <div class="modeham">
+                                    <button>A</button>
+                                    <button>A</button>
+                                </div>
+
+                            </div>
+                            <hr class="hamdiv1" id="div2">
+                            <div class="cont">
+                                <a href="https://newwebmail.iitr.ac.in/">WEBMAIL</a>
+                                <a href="https://iitr.ac.in/Institute/Contact%20Us.html">CONTACT US</a>
+                                <a href="https://iitr.ac.in/support/td/">DIRECTORY</a>
+                            </div>
+                        </div>
+                        <div class="hamside" id="admissions">
+                            <a href="https://iitr.ac.in/Academics/Admission%20To%20Undergraduate%20Programmes.html">UG
+                                Admissions</a>
+                            <a href="https://iitr.ac.in/Academics/Admission%20To%20Postgraduate%20Programmes.html">PG
+                                Admissions</a>
+                            <a href="https://iitr.ac.in/Academics/Admission%20To%20Doctoral%20Programmes.html">PHD
+                                Admissions</a>
+                        </div>
+                        <div class="hamside" id="administration">
+                            <a href="https://iitr.ac.in/Administration/Senate.html">Senate</a>
+                            <a href="https://iitr.ac.in/Administration/Student%20Affairs%20Council.html">Student Affair
+                                Council</a>
+                            <a href="https://iitr.ac.in/Administration/Deans%20Structure/index.html">Deans Corner</a>
+                            <a href="https://iitr.ac.in/Administration/Institute%20Central%20Administration.html">Institute
+                                Central<br> Administration</a>
+                            <a href="https://iitr.ac.in/Administration/Organisations.html">Organisations</a>
+                        </div>
+                        <div class="hamside" id="academics">
+                            <a href="https://iitr.ac.in/Academics/Notifications.html">Notfications</a>
+                            <a href="https://iitr.ac.in/Academics/Academic%20Calendar.html">Academic Calender</a>
+                            <a href="https://iitr.ac.in/Academics/Institute%20Fees.html">Fee Structure</a>
+                            <a href="https://iitr.ac.in/Academics/Academic%20Programmes.html">Academic Programmes</a>
+                            <a href="https://iitr.ac.in/Academics/Downloads.html">Downloads</a>
+                            <a href="https://iitr.ac.in/Administration/DAPC.html">DAPC/CAPC/ScAPC and<br>
+                                DRC/CRC/ScRC</a>
+                            <a href="https://acad.iitr.ac.in/">Academic Login</a>
+
+                        </div>
+                        <div class="hamside" id="resources">
+                            <a href="https://mgcl.iitr.ac.in/">Library</a>
+                            <a href="https://alumni.iitr.ac.in/home">For Alumni</a>
+                            <a href="https://iitr.ac.in/Resources/Healthcare/index.html">Healthcare</a>
+                            <a href="https://iitr.ac.in/Resources/Funds%20Transfer/index.html">Funds Transfer</a>
+                            <a href="https://iitr.ac.in/Resources/Internal%20Committees/index.html">Internal
+                                Committees</a>
+                            <a href="https://www.iitr.ac.in/support/">Service and Support</a>
+                            <a href="https://iitr.ac.in/Resources/Administrative/Index.html">Administrative</a>
+                            <a href="https://iitr.ac.in/Resources/Miscellaneous/index.html">Miscalleneous</a>
+                            <a href="https://iitr.ac.in/Resources/Initiatives%20and%20Foundations/index.html">Intiative
+                                and
+                                Foundation</a>
+                            <a href="https://scsp.iitr.ac.in/">Scholarships</a>
+
+                        </div>
+                        <div class="hamside" id="campus">
+                            <a href="https://iitr.ac.in/Campus%20Life/Hostels.html">Hostel Life</a>
+                            <a href="https://iitr.ac.in/Campus%20Life/Student%20Groups/index.html">Student Groups</a>
+                            <a href="https://iitr.ac.in/Campus%20Life/Guest%20House/index.html">Guest House</a>
+                            <a href="https://iitr.ac.in/Campus%20Life/Clubs/index.html">Clubs</a>
+                            <a href="https://iitr.ac.in/Campus%20Life/Sports/index.html">Sports</a>
+                            <a href="https://iitr.ac.in/Campus%20Life/Facilities/index.html">Facilities</a>
+                            <a href="https://iitr.ac.in/Campus%20Life/Freshers%E2%80%99%20FAQ/Home.html">Fresher's
+                                FAQ</a>
+                        </div>
+                        <div class="hamside" id="placement">
+                            <a href="https://www.iitr.ac.in/Placements/pages/index.html#plprocedure">Procedure</a>
+                        </div>
+                        <div class="hamside" id="careers">
+                            <a href="https://spark.iitr.ac.in/">Intern@IITR(SPARK)</a>
+                            <a href="https://iitr.ac.in/Careers/Faculty%20Positions/index.html">Faculty Position</a>
+                            <a href="https://iitr.ac.in/Careers/Other%20job%20openings/index.html">Other Job
+                                Openings</a>
+                            <a href="https://iitr.ac.in/Careers/Recruitment%20Exam%20Archives/index.html">Recruitment
+                                Examination</a>
+                            <a href="https://iitr.ac.in/Careers/index.html">FAQS</a>
+                        </div>
+                        <div class="hamside" id="department">
+                            <a href="https://iitr.ac.in/Departments/index.html">Departments</a>
+                            <a href="https://iitr.ac.in/Centres/index.html">Centres</a>
+                            <a href="https://www.iitr.ac.in/mfsdsai/">School</a>
+                        </div>
+                        <div class="hamside" id="resources">
+                            <a href="https://mgcl.iitr.ac.in/">Library</a>
+                            <a href="https://alumni.iitr.ac.in/home">For Alumni</a>
+                            <a href="https://iitr.ac.in/Resources/Healthcare/index.html">Healthcare</a>
+                            <a href="https://iitr.ac.in/Resources/Funds%20Transfer/index.html">Funds Transfer</a>
+                            <a href="https://iitr.ac.in/Resources/Internal%20Committees/index.html">Internal
+                                Committees</a>
+                            <a href="https://www.iitr.ac.in/support/">Service and Support</a>
+                            <a href="https://iitr.ac.in/Resources/Administrative/Index.html">Administrative</a>
+                            <a href="https://iitr.ac.in/Resources/Miscellaneous/index.html">Miscalleneous</a>
+                            <a href="https://iitr.ac.in/Resources/Initiatives%20and%20Foundations/index.html">Intiative
+                                and
+                                Foundation</a>
+                            <a href="https://scsp.iitr.ac.in/">Scholarships</a>
+
+                        </div>
+                        <div class="hamside" id="research"></div>
+                        <div class="hamside" id="institute">
+
+                            <a href="https://iitr.ac.in/Institute/index.html">About the Institute</a>
+
+
+
+
+                            <a href="https://iitr.ac.in/Institute/Newsroom.html">Newsroom</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
